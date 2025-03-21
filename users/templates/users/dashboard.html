@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>대시보드</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'users/style.css' %}">
+</head>
+<body>
+    <h2>대시보드</h2>
+    <p>환영합니다, {{ user.username }}!</p>
+    <a href="{% url 'logout' %}">로그아웃</a>
+</body>
+</html>
